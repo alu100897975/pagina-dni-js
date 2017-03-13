@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 3</title>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    </head>
+ 
+    <body>
+        <header>
+            <button type="button" class="button" onclick="contar_parrafos()">Calcular nº de parrafos</button>
+        </header>
+        <form>
+            <input type="text" name="nombre" placeholder="Inserta tu nombre"/>
+            <input type="text" name="dni" placeholder="Inserta tu DNI" id="input-dni"/>
+            <textarea name="texto" id="texto" placeholder="Introduce texto"></textarea>
+            <input type="submit" value="GUARDAR" onclick="crear_parrafo(event)">
+            
+        </form>
+        <section id="parrafos">
+            <h3>Párrafos (<span id="numero-parrafos">2</span>)</span></h3>
+            <ul id="lista-parrafos">
+                <li><p>Esto es un párrafo de prueba.</p></li>
+                
+                <li><p>Y este, otro.</p></li>
+            </ul>
+        </section>
+        <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+	    <script src="js/index.js"></script> 
+    </body>
+   
+</html>
